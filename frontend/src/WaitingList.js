@@ -7,7 +7,7 @@ function WaitingList() {
     const [users , setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/api/waitingList')
+        axios.get('https://zemech-garima-singhs-projects.vercel.app/api/waitingList')
         .then(res => {
             console.log(res.data);
             setUsers(res.data);

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from 'react-router-dom';
 import "./Book.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
@@ -11,6 +12,8 @@ function Book() {
   const [email, setemail] = useState();
   const [address, setaddress] = useState();
   const [users, setUsers] = useState([]);
+
+  const history = useHistory();
 
   useEffect(() => {
     axios
@@ -93,7 +96,8 @@ function Book() {
     setlname("");
     setemail("");
     setaddress("");
-    window.location.href = 'https://zemech-frontend.vercel.app';
+    history.push('https://zemech-frontend.vercel.app');
+    // window.location.href = 'https://zemech-frontend.vercel.app';
   };
 
   //OUTPUT

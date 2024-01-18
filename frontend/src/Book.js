@@ -12,7 +12,7 @@ function Book() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/waitingList")
+      .get("https://zemech-garima-singhs-projects.vercel.app/api/waitingList")
       .then((res) => {
         console.log(res.data);
         setUsers(res.data);
@@ -82,7 +82,7 @@ function Book() {
     };
 
     axios
-      .post("http://localhost:4000/api/book", registered)
+      .post("https://zemech-garima-singhs-projects.vercel.app/api/book", registered)
       .then((response) => console.log(response.data));
 
     //  console.log("Current date & time is :  "+Date.now());

@@ -93,6 +93,7 @@ function Book() {
     setlname("");
     setemail("");
     setaddress("");
+    window.location.href = 'https://zemech-frontend.vercel.app';
   };
 
   //OUTPUT

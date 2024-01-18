@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
 function Book() {
+  axios.defaults.withCredentials = true;
+  
   const [fname, setfname] = useState();
   const [lname, setlname] = useState();
   const [email, setemail] = useState();
@@ -12,7 +14,7 @@ function Book() {
 
   useEffect(() => {
     axios
-      .get("https://zemech-garima-singhs-projects.vercel.app/api/waitingList")
+      .get("https://zemech.vercel.app/api/waitingList")
       .then((res) => {
         console.log(res.data);
         setUsers(res.data);
@@ -82,7 +84,7 @@ function Book() {
     };
 
     axios
-      .post("https://zemech-garima-singhs-projects.vercel.app/api/book", registered)
+      .post("https://zemech.vercel.app/api/book", registered)
       .then((response) => console.log(response.data));
 
     //  console.log("Current date & time is :  "+Date.now());

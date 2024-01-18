@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://admin-garima:Test123@cluster0.gtat2mq.mongodb.ne
 app.use(express.json());
 app.use(cors(
     {
-        origin: ["https://zemech-frontend-l2rhn62xd-garima-singhs-projects.vercel.app/"],
+        origin: ["https://zemech-frontend-l2rhn62xd-garima-singhs-projects.vercel.app"],
         methods: ["GET", "POST"],
         credentials: true
     }

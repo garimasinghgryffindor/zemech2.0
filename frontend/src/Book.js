@@ -98,6 +98,7 @@ function Book() {
     setlname("");
     setemail("");
     setaddress("");
+    window.location.reload();
   };
 
   //OUTPUT

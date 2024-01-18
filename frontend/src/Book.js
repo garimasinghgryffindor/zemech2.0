@@ -90,7 +90,7 @@ function Book() {
 
     axios
       .post("https://zemech.vercel.app/api/book", registered)
-      .then((response) => console.log(response.data));
+      .then((response) => {console.log(response.data); window.location.reload();});
 
     //  console.log("Current date & time is :  "+Date.now());
     //  console.log(time.toLocaleTimeString());
@@ -98,7 +98,6 @@ function Book() {
     setlname("");
     setemail("");
     setaddress("");
-    window.location.reload();
   };
 
   //OUTPUT

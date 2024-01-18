@@ -98,7 +98,7 @@ function Book() {
     setlname("");
     setemail("");
     setaddress("");
-    window.location.href = window.location.href;
+    // window.location.href = window.location.href;
     // history.push('https://zemech-frontend.vercel.app');
     // window.location.href = 'https://zemech-frontend.vercel.app';
     // navigate('https://zemech-frontend.vercel.app');

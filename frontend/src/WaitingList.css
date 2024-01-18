@@ -1,0 +1,15 @@
+caption.top{
+    caption-side: top;
+}
+
+.wait_list_head{
+    background: rgba(0, 0, 0, 0.815);
+    color: #fff;
+    height: 40px;
+}
+
+.waitingList{
+    width: 70%;
+    margin: 50px 14%;
+    text-align: center;
+}

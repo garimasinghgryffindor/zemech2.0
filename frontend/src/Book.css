@@ -1,0 +1,28 @@
+
+.home__bookSlotButton{
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    height: 60px;
+    width: 200px;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 600;
+}
+  
+.home__bookSlotButton:hover {
+    background-color: #e7e7e7; /* Green */
+    color: white;
+}
+
+.item {
+    width: 45% !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.form-div > form{
+    margin-top: 80px;
+    margin-left: 30%;
+}

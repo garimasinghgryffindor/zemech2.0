@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import { useHistory } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import "./Book.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
@@ -15,7 +15,7 @@ function Book() {
   const [users, setUsers] = useState([]);
 
   // const history = useHistory();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -46,7 +46,7 @@ function Book() {
   };
 
   const onSubmit = function (event) {
-    //event.preventDefault();
+    event.preventDefault();
 
     let time = new Date();
 
@@ -98,9 +98,10 @@ function Book() {
     setlname("");
     setemail("");
     setaddress("");
+    window.location.href = window.location.href;
     // history.push('https://zemech-frontend.vercel.app');
     // window.location.href = 'https://zemech-frontend.vercel.app';
-    navigate('https://zemech-frontend.vercel.app');
+    // navigate('https://zemech-frontend.vercel.app');
   };
 
   //OUTPUT
